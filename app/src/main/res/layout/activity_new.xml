@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_purple_and_white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/Rel_reg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFC0CB"
+        >
+
+        <TextView
+            android:id="@+id/text_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Form"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginStart="15dp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_regform"
+        android:layout_below="@id/Rel_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <EditText
+            android:id="@+id/Edt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Enter Full Name"
+            android:paddingStart="10dp"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/Edt_Email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Enter Email-Id"
+            android:paddingStart="10dp"
+            android:textColor="@color/text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/Edt_dob"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_drawable"
+                android:hint="Date of Birth"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_color"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/Edt_Gender"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_drawable"
+                android:hint="Gender"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_color"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/Edt_RegFee"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_drawable"
+                android:hint="Registration Fee"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_color"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/Edt_ClgFee"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_drawable"
+                android:hint="College Fee"
+                android:paddingStart="10dp"
+                android:inputType="number"
+                android:textColor="@color/text_color" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/Edt_ExamFee"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_drawable"
+                android:hint="Exam Fee"
+                android:paddingStart="10dp"
+                android:inputType="number"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/Edt_TotalFee"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_drawable"
+                android:hint="Total Fee"
+                android:paddingStart="10dp"
+                android:inputType="number"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/Edt_Address"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Enter Address"
+            android:paddingStart="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/Edt_PassYear"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Enter Passing Year"
+            android:paddingStart="10dp"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/Edt_MobNo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Enter Mobile No"
+            android:paddingStart="10dp"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lin_regform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_drawable"
+            android:layout_weight="0.5"
+            android:layout_marginStart="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_drawable"
+            android:layout_weight="0.5"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
